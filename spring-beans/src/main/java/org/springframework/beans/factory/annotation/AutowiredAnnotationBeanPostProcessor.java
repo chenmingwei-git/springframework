@@ -265,7 +265,7 @@ public class AutowiredAnnotationBeanPostProcessor extends InstantiationAwareBean
 					Class<?> targetClass = beanClass;
 					do {
 						ReflectionUtils.doWithLocalMethods(targetClass, method -> {
-							//对注解Lookup的支持
+							// 对注解Lookup的支持
 							Lookup lookup = method.getAnnotation(Lookup.class);
 							if (lookup != null) {
 								Assert.state(this.beanFactory != null, "No BeanFactory available");

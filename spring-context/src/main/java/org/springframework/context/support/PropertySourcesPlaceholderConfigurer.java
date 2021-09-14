@@ -125,7 +125,7 @@ public class PropertySourcesPlaceholderConfigurer extends PlaceholderConfigurerS
 	 * sources, and once set, the configurer makes no assumptions about adding additional sources.
 	 */
 	/**
-	 * 调用的是这个，新版本参数解析执行的是这里
+	 * 调用的是这个，新版本参数解析执行的是这里.
 	*/
 	@Override
 	public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {

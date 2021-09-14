@@ -26,9 +26,6 @@ import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.core.NamedThreadLocal;
 
-import java.util.HashSet;
-import java.util.Set;
-
 /**
  * Alternative to an object pool. This {@link org.springframework.aop.TargetSource}
  * uses a threading model in which every thread has its own copy of the target.

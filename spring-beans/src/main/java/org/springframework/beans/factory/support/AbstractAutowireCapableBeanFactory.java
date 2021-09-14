@@ -563,7 +563,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 			instanceWrapper = this.factoryBeanInstanceCache.remove(beanName);
 		}
 		if (instanceWrapper == null) {
-			//创建实例,,重点看，重要程度：5 
+			// 创建实例,,重点看，重要程度：5
 			instanceWrapper = createBeanInstance(beanName, mbd, args);
 		}
 		Object bean = instanceWrapper.getWrappedInstance();
@@ -1820,7 +1820,6 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 			//对类中某些特殊方法的调用，比如@PostConstruct，Aware接口，非常重要 重要程度 ：5
 			//ApplicationContextAwareProcessor 对Aware接口的调用如：
 			//EnvironmentAware EmbeddedValueResolverAware  ResourceLoaderAware ApplicationEventPublisherAware MessageSourceAware  ApplicationContextAware
-			
 			//ImportAwareBeanPostProcessor 对ImportAware的支持
 			wrappedBean = applyBeanPostProcessorsBeforeInitialization(wrappedBean, beanName);
 		}
