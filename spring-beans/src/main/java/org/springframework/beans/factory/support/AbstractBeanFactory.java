@@ -262,9 +262,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 			}
 			//该方法是FactoryBean接口的调用入口
 			bean = getObjectForBeanInstance(sharedInstance, name, beanName, null);
-		}
-
-		else {
+		} else {
 			//如果singletonObjects缓存里面没有，则走下来
 			// Fail if we're already creating this bean instance:
 			// We're assumably within a circular reference.
